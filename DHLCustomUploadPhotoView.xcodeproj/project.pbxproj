@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		516FF53F5058C31AC095C444 /* libPods-DHLCustomUploadPhotoView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9507A21A134217EA6E308FC /* libPods-DHLCustomUploadPhotoView.a */; };
+		D75A97972FDB1AAE00EE6E13 /* DHLCustomDashedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75A97952FDB1AAE00EE6E13 /* DHLCustomDashedView.swift */; };
+		D75A979B2FDB1ABB00EE6E13 /* DHLDocumentViewerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D75A97992FDB1ABB00EE6E13 /* DHLDocumentViewerView.xib */; };
+		D75A979C2FDB1ABB00EE6E13 /* DHLDocumentViewerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75A97982FDB1ABB00EE6E13 /* DHLDocumentViewerView.swift */; };
+		D75A97A32FDB1AC000EE6E13 /* DHLUploadPhotoOrPdfView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D75A979E2FDB1AC000EE6E13 /* DHLUploadPhotoOrPdfView.xib */; };
+		D75A97A42FDB1AC000EE6E13 /* DHLUploadPhotoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D75A97A12FDB1AC000EE6E13 /* DHLUploadPhotoView.xib */; };
+		D75A97A52FDB1AC000EE6E13 /* DHLUploadPhotoOrPdfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75A979D2FDB1AC000EE6E13 /* DHLUploadPhotoOrPdfView.swift */; };
+		D75A97A62FDB1AC000EE6E13 /* DHLUploadPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75A97A02FDB1AC000EE6E13 /* DHLUploadPhotoView.swift */; };
+		D75A97A92FDB1AD100EE6E13 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75A97A82FDB1AD100EE6E13 /* Extensions.swift */; };
+		D75A97AC2FDB1ADF00EE6E13 /* FileManagerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75A97AB2FDB1ADF00EE6E13 /* FileManagerHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1063B7D7A7ADB596A91F88A4 /* Pods-DHLCustomUploadPhotoView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHLCustomUploadPhotoView.release.xcconfig"; path = "Target Support Files/Pods-DHLCustomUploadPhotoView/Pods-DHLCustomUploadPhotoView.release.xcconfig"; sourceTree = "<group>"; };
+		B9507A21A134217EA6E308FC /* libPods-DHLCustomUploadPhotoView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DHLCustomUploadPhotoView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D38546FFD807F60AC9D2A879 /* Pods-DHLCustomUploadPhotoView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHLCustomUploadPhotoView.debug.xcconfig"; path = "Target Support Files/Pods-DHLCustomUploadPhotoView/Pods-DHLCustomUploadPhotoView.debug.xcconfig"; sourceTree = "<group>"; };
+		D75A976E2FDB19E400EE6E13 /* DHLCustomUploadPhotoView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DHLCustomUploadPhotoView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D75A97952FDB1AAE00EE6E13 /* DHLCustomDashedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHLCustomDashedView.swift; sourceTree = "<group>"; };
+		D75A97982FDB1ABB00EE6E13 /* DHLDocumentViewerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHLDocumentViewerView.swift; sourceTree = "<group>"; };
+		D75A97992FDB1ABB00EE6E13 /* DHLDocumentViewerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DHLDocumentViewerView.xib; sourceTree = "<group>"; };
+		D75A979D2FDB1AC000EE6E13 /* DHLUploadPhotoOrPdfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHLUploadPhotoOrPdfView.swift; sourceTree = "<group>"; };
+		D75A979E2FDB1AC000EE6E13 /* DHLUploadPhotoOrPdfView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DHLUploadPhotoOrPdfView.xib; sourceTree = "<group>"; };
+		D75A97A02FDB1AC000EE6E13 /* DHLUploadPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHLUploadPhotoView.swift; sourceTree = "<group>"; };
+		D75A97A12FDB1AC000EE6E13 /* DHLUploadPhotoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DHLUploadPhotoView.xib; sourceTree = "<group>"; };
+		D75A97A82FDB1AD100EE6E13 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D75A97AB2FDB1ADF00EE6E13 /* FileManagerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D75A976B2FDB19E400EE6E13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				516FF53F5058C31AC095C444 /* libPods-DHLCustomUploadPhotoView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		399FEA88376EDD9B07C82051 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D38546FFD807F60AC9D2A879 /* Pods-DHLCustomUploadPhotoView.debug.xcconfig */,
+				1063B7D7A7ADB596A91F88A4 /* Pods-DHLCustomUploadPhotoView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5E74E6AE8B820CF170DED251 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9507A21A134217EA6E308FC /* libPods-DHLCustomUploadPhotoView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D75A97642FDB19E400EE6E13 = {
+			isa = PBXGroup;
+			children = (
+				D75A97792FDB19E900EE6E13 /* DHLCustomUploadPhotoView */,
+				D75A976F2FDB19E400EE6E13 /* Products */,
+				399FEA88376EDD9B07C82051 /* Pods */,
+				5E74E6AE8B820CF170DED251 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D75A976F2FDB19E400EE6E13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D75A976E2FDB19E400EE6E13 /* DHLCustomUploadPhotoView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D75A97792FDB19E900EE6E13 /* DHLCustomUploadPhotoView */ = {
+			isa = PBXGroup;
+			children = (
+				D75A97AA2FDB1AD700EE6E13 /* Helpers */,
+				D75A97A72FDB1AC800EE6E13 /* Extensions */,
+				D75A97942FDB1AA100EE6E13 /* Modules */,
+			);
+			path = DHLCustomUploadPhotoView;
+			sourceTree = "<group>";
+		};
+		D75A97942FDB1AA100EE6E13 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D75A979F2FDB1AC000EE6E13 /* DHLUploadPhotoOrPdfView */,
+				D75A97A22FDB1AC000EE6E13 /* DHLUploadPhotoView */,
+				D75A979A2FDB1ABB00EE6E13 /* DHLDocumentViewerView */,
+				D75A97962FDB1AAE00EE6E13 /* DHLCustomDashedView */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D75A97962FDB1AAE00EE6E13 /* DHLCustomDashedView */ = {
+			isa = PBXGroup;
+			children = (
+				D75A97952FDB1AAE00EE6E13 /* DHLCustomDashedView.swift */,
+			);
+			path = DHLCustomDashedView;
+			sourceTree = "<group>";
+		};
+		D75A979A2FDB1ABB00EE6E13 /* DHLDocumentViewerView */ = {
+			isa = PBXGroup;
+			children = (
+				D75A97982FDB1ABB00EE6E13 /* DHLDocumentViewerView.swift */,
+				D75A97992FDB1ABB00EE6E13 /* DHLDocumentViewerView.xib */,
+			);
+			path = DHLDocumentViewerView;
+			sourceTree = "<group>";
+		};
+		D75A979F2FDB1AC000EE6E13 /* DHLUploadPhotoOrPdfView */ = {
+			isa = PBXGroup;
+			children = (
+				D75A979D2FDB1AC000EE6E13 /* DHLUploadPhotoOrPdfView.swift */,
+				D75A979E2FDB1AC000EE6E13 /* DHLUploadPhotoOrPdfView.xib */,
+			);
+			path = DHLUploadPhotoOrPdfView;
+			sourceTree = "<group>";
+		};
+		D75A97A22FDB1AC000EE6E13 /* DHLUploadPhotoView */ = {
+			isa = PBXGroup;
+			children = (
+				D75A97A02FDB1AC000EE6E13 /* DHLUploadPhotoView.swift */,
+				D75A97A12FDB1AC000EE6E13 /* DHLUploadPhotoView.xib */,
+			);
+			path = DHLUploadPhotoView;
+			sourceTree = "<group>";
+		};
+		D75A97A72FDB1AC800EE6E13 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D75A97A82FDB1AD100EE6E13 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D75A97AA2FDB1AD700EE6E13 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D75A97AB2FDB1ADF00EE6E13 /* FileManagerHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D75A97692FDB19E400EE6E13 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D75A976D2FDB19E400EE6E13 /* DHLCustomUploadPhotoView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D75A97752FDB19E400EE6E13 /* Build configuration list for PBXNativeTarget "DHLCustomUploadPhotoView" */;
+			buildPhases = (
+				68BE9E540CD6AF7271B1D03C /* [CP] Check Pods Manifest.lock */,
+				D75A97692FDB19E400EE6E13 /* Headers */,
+				D75A976A2FDB19E400EE6E13 /* Sources */,
+				D75A976B2FDB19E400EE6E13 /* Frameworks */,
+				D75A976C2FDB19E400EE6E13 /* Resources */,
+				0AB2A4B03277DA8DB810D726 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DHLCustomUploadPhotoView;
+			productName = DHLCustomUploadPhotoView;
+			productReference = D75A976E2FDB19E400EE6E13 /* DHLCustomUploadPhotoView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D75A97652FDB19E400EE6E13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2650;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					D75A976D2FDB19E400EE6E13 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+				};
+			};
+			buildConfigurationList = D75A97682FDB19E400EE6E13 /* Build configuration list for PBXProject "DHLCustomUploadPhotoView" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D75A97642FDB19E400EE6E13;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D75A976F2FDB19E400EE6E13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D75A976D2FDB19E400EE6E13 /* DHLCustomUploadPhotoView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D75A976C2FDB19E400EE6E13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D75A97A32FDB1AC000EE6E13 /* DHLUploadPhotoOrPdfView.xib in Resources */,
+				D75A97A42FDB1AC000EE6E13 /* DHLUploadPhotoView.xib in Resources */,
+				D75A979B2FDB1ABB00EE6E13 /* DHLDocumentViewerView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AB2A4B03277DA8DB810D726 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DHLCustomUploadPhotoView/Pods-DHLCustomUploadPhotoView-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DHLCustomUploadPhotoView/Pods-DHLCustomUploadPhotoView-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DHLCustomUploadPhotoView/Pods-DHLCustomUploadPhotoView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68BE9E540CD6AF7271B1D03C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DHLCustomUploadPhotoView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D75A976A2FDB19E400EE6E13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D75A97A92FDB1AD100EE6E13 /* Extensions.swift in Sources */,
+				D75A979C2FDB1ABB00EE6E13 /* DHLDocumentViewerView.swift in Sources */,
+				D75A97972FDB1AAE00EE6E13 /* DHLCustomDashedView.swift in Sources */,
+				D75A97A52FDB1AC000EE6E13 /* DHLUploadPhotoOrPdfView.swift in Sources */,
+				D75A97A62FDB1AC000EE6E13 /* DHLUploadPhotoView.swift in Sources */,
+				D75A97AC2FDB1ADF00EE6E13 /* FileManagerHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D75A97732FDB19E400EE6E13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D75A97742FDB19E400EE6E13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D75A97762FDB19E400EE6E13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D38546FFD807F60AC9D2A879 /* Pods-DHLCustomUploadPhotoView.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "daniel-herlop.DHLCustomUploadPhotoView";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D75A97772FDB19E400EE6E13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1063B7D7A7ADB596A91F88A4 /* Pods-DHLCustomUploadPhotoView.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "daniel-herlop.DHLCustomUploadPhotoView";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D75A97682FDB19E400EE6E13 /* Build configuration list for PBXProject "DHLCustomUploadPhotoView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D75A97732FDB19E400EE6E13 /* Debug */,
+				D75A97742FDB19E400EE6E13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D75A97752FDB19E400EE6E13 /* Build configuration list for PBXNativeTarget "DHLCustomUploadPhotoView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D75A97762FDB19E400EE6E13 /* Debug */,
+				D75A97772FDB19E400EE6E13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D75A97652FDB19E400EE6E13 /* Project object */;
+}

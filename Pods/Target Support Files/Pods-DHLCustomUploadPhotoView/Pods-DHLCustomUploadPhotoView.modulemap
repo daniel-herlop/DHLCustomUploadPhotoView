@@ -1,0 +1,6 @@
+module Pods_DHLCustomUploadPhotoView {
+  umbrella header "Pods-DHLCustomUploadPhotoView-umbrella.h"
+
+  export *
+  module * { export * }
+}

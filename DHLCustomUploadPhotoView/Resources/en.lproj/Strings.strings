@@ -1,0 +1,17 @@
+/* 
+  Strings.strings
+  DHLCustomUploadPhotoView
+
+  Created by Daniel Hernandez on 11/06/2026.
+  
+*/
+"go_back"="Volver a la interfaz anterior";
+"delete"="Eliminar";
+"download"="Descargar";
+"attach_photo"="Adjuntar foto";
+"see_photo"="Ver foto";
+"attach_photo_camera_or_gallery"="Deseas hacer una foto o añadir una foto de la galería";
+"attach_pdf"="Adjuntar PDF";
+"attach_photo"="Adjuntar foto";
+"add_new_document"="Añadir nuevo documento";
+"mandatory"=". Obligatorio. ";

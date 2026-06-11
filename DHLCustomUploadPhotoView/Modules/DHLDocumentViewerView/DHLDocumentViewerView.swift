@@ -8,7 +8,7 @@
 import UIKit
 import WebKit
 
-class DHLDocumentViewerView: UIView, UIScrollViewDelegate {
+public class DHLDocumentViewerView: UIView, UIScrollViewDelegate {
     
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -42,7 +42,7 @@ class DHLDocumentViewerView: UIView, UIScrollViewDelegate {
     private var image: UIImage?
     private var downloadFileName: String?
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         
         super.init(frame: frame)
         nibSetup()
@@ -58,7 +58,9 @@ class DHLDocumentViewerView: UIView, UIScrollViewDelegate {
         
         backgroundColor = .clear
         
-        if let xibView = Bundle.main.loadNibNamed("DHLDocumentViewer", owner: self, options: nil)?.first as? UIView {
+        let bundle = Bundle(for: DHLDocumentViewerView.self)
+        
+        if let xibView = bundle.loadNibNamed("DHLDocumentViewerView", owner: self, options: nil)?.first as? UIView {
             
             xibView.frame = self.bounds
             xibView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -68,7 +70,7 @@ class DHLDocumentViewerView: UIView, UIScrollViewDelegate {
         }
     }
     
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         
         super.awakeFromNib()
         
@@ -87,8 +89,8 @@ class DHLDocumentViewerView: UIView, UIScrollViewDelegate {
         containerView.layer.cornerRadius = 8
         
         deleteView.layer.cornerRadius = deleteView.frame.height / 2
-        containerView.layer.borderColor = UIColor.red.cgColor
-        containerView.layer.borderWidth = 1.5
+        deleteView.layer.borderColor = UIColor.red.cgColor
+        deleteView.layer.borderWidth = 1.5
         deleteView.backgroundColor = .white
         
         downloadView.layer.cornerRadius = deleteView.frame.height / 2
@@ -102,7 +104,7 @@ class DHLDocumentViewerView: UIView, UIScrollViewDelegate {
     // document para cargar un Data, ya sea una imagen o un pdf
     // image para cargar una UIImage directamente
     // url para cargar una url del servicio
-    func setUp(parent: UIViewController?, title: String? = nil, titleFont: UIFont = .systemFont(ofSize: 18, weight: .bold), document: Data? = nil, image: UIImage? = nil, url: String? = nil, showDelete: Bool, showDownloadButton: Bool, downloadFileName: String? = nil, allowZoom: Bool = true, deleteAction: @escaping (() -> Void), cancelAction: @escaping (() -> Void)) {
+    public func setUp(parent: UIViewController?, title: String? = nil, titleFont: UIFont = .systemFont(ofSize: 18, weight: .bold), document: Data? = nil, image: UIImage? = nil, url: String? = nil, showDelete: Bool, showDownloadButton: Bool, downloadFileName: String? = nil, allowZoom: Bool = true, deleteAction: @escaping (() -> Void), cancelAction: @escaping (() -> Void)) {
         self.cancelAction = cancelAction
         self.deleteAction = deleteAction
         self.url = url
@@ -170,7 +172,7 @@ class DHLDocumentViewerView: UIView, UIScrollViewDelegate {
         }
     }
     
-    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+    public func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return photoImageView
     }
     

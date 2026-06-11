@@ -17,6 +17,8 @@
 		D75A97A62FDB1AC000EE6E13 /* DHLUploadPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75A97A02FDB1AC000EE6E13 /* DHLUploadPhotoView.swift */; };
 		D75A97A92FDB1AD100EE6E13 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75A97A82FDB1AD100EE6E13 /* Extensions.swift */; };
 		D75A97AC2FDB1ADF00EE6E13 /* FileManagerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75A97AB2FDB1ADF00EE6E13 /* FileManagerHelper.swift */; };
+		D75A97B12FDB206300EE6E13 /* Strings.strings in Resources */ = {isa = PBXBuildFile; fileRef = D75A97AF2FDB206300EE6E13 /* Strings.strings */; };
+		D75A97B22FDB206300EE6E13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D75A97AD2FDB206300EE6E13 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		D75A97A12FDB1AC000EE6E13 /* DHLUploadPhotoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DHLUploadPhotoView.xib; sourceTree = "<group>"; };
 		D75A97A82FDB1AD100EE6E13 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D75A97AB2FDB1ADF00EE6E13 /* FileManagerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerHelper.swift; sourceTree = "<group>"; };
+		D75A97AD2FDB206300EE6E13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D75A97AE2FDB206300EE6E13 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Strings.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 				D75A97AA2FDB1AD700EE6E13 /* Helpers */,
 				D75A97A72FDB1AC800EE6E13 /* Extensions */,
 				D75A97942FDB1AA100EE6E13 /* Modules */,
+				D75A97B02FDB206300EE6E13 /* Resources */,
 			);
 			path = DHLCustomUploadPhotoView;
 			sourceTree = "<group>";
@@ -152,6 +157,15 @@
 				D75A97AB2FDB1ADF00EE6E13 /* FileManagerHelper.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D75A97B02FDB206300EE6E13 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D75A97AD2FDB206300EE6E13 /* Assets.xcassets */,
+				D75A97AF2FDB206300EE6E13 /* Strings.strings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +243,8 @@
 				D75A97A32FDB1AC000EE6E13 /* DHLUploadPhotoOrPdfView.xib in Resources */,
 				D75A97A42FDB1AC000EE6E13 /* DHLUploadPhotoView.xib in Resources */,
 				D75A979B2FDB1ABB00EE6E13 /* DHLDocumentViewerView.xib in Resources */,
+				D75A97B12FDB206300EE6E13 /* Strings.strings in Resources */,
+				D75A97B22FDB206300EE6E13 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,9 +259,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DHLCustomUploadPhotoView/Pods-DHLCustomUploadPhotoView-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DHLCustomUploadPhotoView/Pods-DHLCustomUploadPhotoView-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -291,6 +311,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D75A97AF2FDB206300EE6E13 /* Strings.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D75A97AE2FDB206300EE6E13 /* en */,
+			);
+			name = Strings.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D75A97732FDB19E400EE6E13 /* Debug */ = {

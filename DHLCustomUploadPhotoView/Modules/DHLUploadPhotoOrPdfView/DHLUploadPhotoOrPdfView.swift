@@ -10,7 +10,7 @@ import UIKit
 import UniformTypeIdentifiers
 import MobileCoreServices
 
-class DHLUploadPhotoOrPdfView: UIView {
+public class DHLUploadPhotoOrPdfView: UIView {
     
     @IBOutlet weak var addNewDocumentLabel: UILabel!
     
@@ -38,7 +38,7 @@ class DHLUploadPhotoOrPdfView: UIView {
     var showDelete: Bool = true
     private var customTintColor: UIColor = .blue
 
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
 
         super.init(frame: frame)
         nibSetup()
@@ -53,8 +53,10 @@ class DHLUploadPhotoOrPdfView: UIView {
     private func nibSetup() {
 
         backgroundColor = .clear
+        
+        let bundle = Bundle(for: DHLUploadPhotoOrPdfView.self)
 
-        if let xibView = Bundle.main.loadNibNamed("DHLUploadPhotoOrPdfView", owner: self, options: nil)?.first as? UIView {
+        if let xibView = bundle.loadNibNamed("DHLUploadPhotoOrPdfView", owner: self, options: nil)?.first as? UIView {
 
             xibView.frame = self.bounds
             xibView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -64,7 +66,7 @@ class DHLUploadPhotoOrPdfView: UIView {
         }
     }
 
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
 
         super.awakeFromNib()
 
@@ -88,7 +90,6 @@ class DHLUploadPhotoOrPdfView: UIView {
     
     func setUpViews() {
         
-        
         attachPhoto.layer.cornerRadius = 8
         attachPdf.layer.cornerRadius = 8
 
@@ -102,12 +103,12 @@ class DHLUploadPhotoOrPdfView: UIView {
         attachPhoto.dashLength = 6
         attachPhoto.betweenDashesSpace = 3
         
-        attachPhotoLabel.text = NSLocalizedString("attach_photo", tableName: "Strings", bundle: Bundle(for: DHLUploadPhotoView.self), comment: "")
-        attachPdfLabel.text = NSLocalizedString("attach_pdf", tableName: "Strings", bundle: Bundle(for: DHLUploadPhotoView.self), comment: "")
+        attachPhotoLabel.text = NSLocalizedString("attach_photo", tableName: "Strings", bundle: Bundle(for: DHLUploadPhotoOrPdfView.self), comment: "")
+        attachPdfLabel.text = NSLocalizedString("attach_pdf", tableName: "Strings", bundle: Bundle(for: DHLUploadPhotoOrPdfView.self), comment: "")
     }
 
     // data para cargar un archivo, ya sea pdf o png/jpg
-    func setUp(parent: UIViewController?, font: UIFont = .systemFont(ofSize: 14), customTintColor: UIColor = .blue, showDelete: Bool = true, titleText: String? = nil, mandatory: Bool = false, data: Data? = nil, documentPickedAction: @escaping ((URL, Data?) -> Void) = { document, data in }, documentDeletedAction: @escaping (() -> Void) = { }) {
+    public func setUp(parent: UIViewController?, font: UIFont = .systemFont(ofSize: 14), customTintColor: UIColor = .blue, showDelete: Bool = true, titleText: String? = nil, mandatory: Bool = false, data: Data? = nil, documentPickedAction: @escaping ((URL, Data?) -> Void) = { document, data in }, documentDeletedAction: @escaping (() -> Void) = { }) {
         self.parent = parent
         self.documentPickedAction = documentPickedAction
         self.documentDeletedAction = documentDeletedAction
@@ -246,6 +247,8 @@ class DHLUploadPhotoOrPdfView: UIView {
                     }
                 )
                 */
+                documentViewerView.removeFromSuperview()
+                deleteAction()
             },
             cancelAction: {
                 documentViewerView.removeFromSuperview()
@@ -313,6 +316,7 @@ class DHLUploadPhotoOrPdfView: UIView {
             }
         )
          */
+        self.imagePicker(source: .photoLibrary)
     }
     
     @IBAction func attachPdfButtonPressed(_ sender: Any) {
@@ -347,7 +351,7 @@ class DHLUploadPhotoOrPdfView: UIView {
 // MARK: UIImagePickerControllerDelegate, UINavigationControllerDelegate
 extension DHLUploadPhotoOrPdfView: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let pickedImage = info[.originalImage] as? UIImage {
             if let pickedImagePath = info[.imageURL] as? URL {
 
@@ -371,7 +375,7 @@ extension DHLUploadPhotoOrPdfView: UIImagePickerControllerDelegate, UINavigation
         self.parent?.dismiss(animated: true, completion: nil)
     }
 
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+    public func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         self.parent?.dismiss(animated: true, completion: nil)
     }
     
@@ -398,7 +402,7 @@ extension DHLUploadPhotoOrPdfView: UIImagePickerControllerDelegate, UINavigation
 //********************************************
 
 extension DHLUploadPhotoOrPdfView: UIDocumentPickerDelegate {
-    func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
+    public func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
         guard let url = urls.first else {
               return
         }

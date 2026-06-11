@@ -10,11 +10,11 @@ import UIKit
 import MobileCoreServices
 import UniformTypeIdentifiers
 
-class DHLUploadPhotoView: UIView {
+public class DHLUploadPhotoView: UIView {
     
     @IBOutlet weak var containerView: DHLCustomDashedView!
     @IBOutlet weak var attachPhotoLabel: UILabel!
-    @IBOutlet weak var attachedPhotoImageView: UIImageView!
+    @IBOutlet public weak var attachedPhotoImageView: UIImageView!
     @IBOutlet weak var attachPhotoButton: UIButton!
     
     private var parent: UIViewController?
@@ -22,7 +22,7 @@ class DHLUploadPhotoView: UIView {
     
     var pickedImagePath: URL?
 
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
 
         super.init(frame: frame)
         nibSetup()
@@ -50,7 +50,7 @@ class DHLUploadPhotoView: UIView {
         }
     }
 
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
 
         super.awakeFromNib()
 
@@ -70,7 +70,7 @@ class DHLUploadPhotoView: UIView {
         attachPhotoLabel.text = NSLocalizedString("attach_photo", tableName: "Strings", bundle: Bundle(for: DHLUploadPhotoView.self), comment: "")
     }
 
-    func setUp(parent: UIViewController, font: UIFont = .systemFont(ofSize: 14), customTintColor: UIColor = .blue, image: UIImage? = nil, showDelete: Bool = true) {
+    public func setUp(parent: UIViewController, font: UIFont = .systemFont(ofSize: 14), customTintColor: UIColor = .blue, image: UIImage? = nil, showDelete: Bool = true) {
         self.parent = parent
         self.showDelete = showDelete
         
@@ -136,6 +136,8 @@ class DHLUploadPhotoView: UIView {
                     }
                 )
                 */
+                documentViewerView.removeFromSuperview()
+                deleteAction()
             },
             cancelAction: {
                 documentViewerView.removeFromSuperview()
@@ -182,13 +184,14 @@ class DHLUploadPhotoView: UIView {
             }
         )
          */
+        self.imagePicker(source: .photoLibrary)
     }
 }
 
 // MARK: UIImagePickerControllerDelegate, UINavigationControllerDelegate
 extension DHLUploadPhotoView: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let pickedImage = info[.originalImage] as? UIImage {
             if let pickedImagePath = info[.imageURL] as? URL {
 
@@ -221,7 +224,7 @@ extension DHLUploadPhotoView: UIImagePickerControllerDelegate, UINavigationContr
         self.parent?.dismiss(animated: true, completion: nil)
     }
 
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+    public func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         self.parent?.dismiss(animated: true, completion: nil)
     }
     

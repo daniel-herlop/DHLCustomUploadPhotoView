@@ -1,6 +1,6 @@
 //
 //  DHLUploadPhotoOrPdfView.swift
-//  pescaREC
+//  DHLCustomUploadPhotoView
 //
 //  Created by Daniel Hernandez on 18/6/25.
 //

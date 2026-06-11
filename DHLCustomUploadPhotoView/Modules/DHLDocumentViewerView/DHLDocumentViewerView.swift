@@ -1,6 +1,6 @@
 //
 //  DHLDocumentViewerView.swift
-//  isquad-gastos
+//  DHLCustomUploadPhotoView
 //
 //  Created by Daniel Hernandez on 24/4/25.
 //

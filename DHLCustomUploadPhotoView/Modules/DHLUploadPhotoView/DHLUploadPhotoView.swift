@@ -161,7 +161,6 @@ public class DHLUploadPhotoView: UIView {
 
     // MARK: IBActions
     @IBAction func attachPhotoButtonPressed(_ sender: Any) {
-        guard let parent = parent else { return }
         
         guard attachedPhotoImageView.image == nil else {
             openDocumentViewer(

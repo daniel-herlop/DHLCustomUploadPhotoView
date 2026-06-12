@@ -12,10 +12,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DHLUploadPhotoOrPdfView" customModule="DHLCustomUploadPhotoView" customModuleProvider="target">
             <connections>
                 <outlet property="addNewDocumentLabel" destination="Plk-IS-19l" id="AaP-Uv-7nW"/>
-                <outlet property="attachPdf" destination="6aA-w9-cbg" id="1oE-f7-YN7"/>
+                <outlet property="attachPdf" destination="6aA-w9-cbg" id="mk7-yH-2IY"/>
                 <outlet property="attachPdfButton" destination="UAz-3t-JKy" id="agj-BA-kWS"/>
                 <outlet property="attachPdfLabel" destination="CiP-os-oOn" id="UXy-V1-Eiw"/>
-                <outlet property="attachPhoto" destination="xju-uh-lJ1" id="Btq-xP-xCP"/>
+                <outlet property="attachPhoto" destination="xju-uh-lJ1" id="aoy-VZ-5sO"/>
                 <outlet property="attachPhotoButton" destination="Iyf-eF-c4U" id="55W-mx-tLb"/>
                 <outlet property="attachPhotoLabel" destination="K7u-KO-qJ1" id="J0I-SG-nRM"/>
                 <outlet property="attachedPdfImageView" destination="m6f-d0-iHX" id="d1M-vy-Q2b"/>
@@ -45,7 +45,7 @@
                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="keV-GN-ELv">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6aA-w9-cbg" customClass="CustomDashedView" customModule="DHLCustomUploadPhotoView" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6aA-w9-cbg" customClass="DHLCustomDashedView" customModule="DHLCustomUploadPhotoView" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="184.66666666666666" height="200"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ITK-8d-PRd">
@@ -101,7 +101,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="m6f-d0-iHX" secondAttribute="bottom" id="wTc-PC-HLk"/>
                                             </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xju-uh-lJ1" customClass="CustomDashedView" customModule="DHLCustomUploadPhotoView" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xju-uh-lJ1" customClass="DHLCustomDashedView" customModule="DHLCustomUploadPhotoView" customModuleProvider="target">
                                             <rect key="frame" x="208.66666666666663" y="0.0" width="184.33333333333337" height="200"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0tG-V3-SUs">

@@ -19,6 +19,8 @@
 		D75A97AC2FDB1ADF00EE6E13 /* FileManagerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75A97AB2FDB1ADF00EE6E13 /* FileManagerHelper.swift */; };
 		D75A97B12FDB206300EE6E13 /* Strings.strings in Resources */ = {isa = PBXBuildFile; fileRef = D75A97AF2FDB206300EE6E13 /* Strings.strings */; };
 		D75A97B22FDB206300EE6E13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D75A97AD2FDB206300EE6E13 /* Assets.xcassets */; };
+		D7889A5C2FDC0BDF00E6E7B5 /* DHLFourButtonsModal.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7889A5A2FDC0BDF00E6E7B5 /* DHLFourButtonsModal.xib */; };
+		D7889A5D2FDC0BDF00E6E7B5 /* DHLFourButtonsModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7889A592FDC0BDF00E6E7B5 /* DHLFourButtonsModal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		D75A97AB2FDB1ADF00EE6E13 /* FileManagerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerHelper.swift; sourceTree = "<group>"; };
 		D75A97AD2FDB206300EE6E13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D75A97AE2FDB206300EE6E13 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Strings.strings; sourceTree = "<group>"; };
+		D7889A592FDC0BDF00E6E7B5 /* DHLFourButtonsModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHLFourButtonsModal.swift; sourceTree = "<group>"; };
+		D7889A5A2FDC0BDF00E6E7B5 /* DHLFourButtonsModal.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DHLFourButtonsModal.xib; sourceTree = "<group>"; };
+		D7889A5E2FDC142700E6E7B5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Strings.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,10 +105,11 @@
 		D75A97942FDB1AA100EE6E13 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				D75A979F2FDB1AC000EE6E13 /* DHLUploadPhotoOrPdfView */,
-				D75A97A22FDB1AC000EE6E13 /* DHLUploadPhotoView */,
-				D75A979A2FDB1ABB00EE6E13 /* DHLDocumentViewerView */,
 				D75A97962FDB1AAE00EE6E13 /* DHLCustomDashedView */,
+				D7889A5B2FDC0BDF00E6E7B5 /* DHLFourButtonsModal */,
+				D75A979A2FDB1ABB00EE6E13 /* DHLDocumentViewerView */,
+				D75A97A22FDB1AC000EE6E13 /* DHLUploadPhotoView */,
+				D75A979F2FDB1AC000EE6E13 /* DHLUploadPhotoOrPdfView */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -168,6 +174,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		D7889A5B2FDC0BDF00E6E7B5 /* DHLFourButtonsModal */ = {
+			isa = PBXGroup;
+			children = (
+				D7889A592FDC0BDF00E6E7B5 /* DHLFourButtonsModal.swift */,
+				D7889A5A2FDC0BDF00E6E7B5 /* DHLFourButtonsModal.xib */,
+			);
+			path = DHLFourButtonsModal;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -217,11 +232,12 @@
 				};
 			};
 			buildConfigurationList = D75A97682FDB19E400EE6E13 /* Build configuration list for PBXProject "DHLCustomUploadPhotoView" */;
-			developmentRegion = en;
+			developmentRegion = es;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = D75A97642FDB19E400EE6E13;
 			minimizedProjectReferenceProxies = 1;
@@ -245,6 +261,7 @@
 				D75A979B2FDB1ABB00EE6E13 /* DHLDocumentViewerView.xib in Resources */,
 				D75A97B12FDB206300EE6E13 /* Strings.strings in Resources */,
 				D75A97B22FDB206300EE6E13 /* Assets.xcassets in Resources */,
+				D7889A5C2FDC0BDF00E6E7B5 /* DHLFourButtonsModal.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D75A97A92FDB1AD100EE6E13 /* Extensions.swift in Sources */,
+				D7889A5D2FDC0BDF00E6E7B5 /* DHLFourButtonsModal.swift in Sources */,
 				D75A979C2FDB1ABB00EE6E13 /* DHLDocumentViewerView.swift in Sources */,
 				D75A97972FDB1AAE00EE6E13 /* DHLCustomDashedView.swift in Sources */,
 				D75A97A52FDB1AC000EE6E13 /* DHLUploadPhotoOrPdfView.swift in Sources */,
@@ -317,6 +335,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				D75A97AE2FDB206300EE6E13 /* en */,
+				D7889A5E2FDC142700E6E7B5 /* es */,
 			);
 			name = Strings.strings;
 			sourceTree = "<group>";
@@ -329,6 +348,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -395,6 +415,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

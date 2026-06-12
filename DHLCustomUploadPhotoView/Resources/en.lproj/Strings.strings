@@ -15,3 +15,8 @@
 "attach_photo"="Adjuntar foto";
 "add_new_document"="Añadir nuevo documento";
 "mandatory"=". Obligatorio. ";
+"delete_photo_title"="Eliminar foto";
+"delete_photo_description"="¿Desea eliminar esta fotografía?";
+"cancel"="Cancelar";
+"camera"="Cámara";
+"gallery"="Galería";

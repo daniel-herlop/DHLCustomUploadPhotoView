@@ -231,24 +231,37 @@ public class DHLUploadPhotoOrPdfView: UIView {
             showDelete: showDelete,
             showDownloadButton: false,
             deleteAction: {
-                /*
-                parent.showTwoButtons(
-                    R.string.strings.delete_photo_title(),
-                    description: R.string.strings.delete_photo_description(),
-                    image: R.image.ic_warning(),
-                    first: R.string.strings.delete(),
+                
+                let fourButtonsModal = DHLFourButtonsModal(frame: .zero)
+                fourButtonsModal.translatesAutoresizingMaskIntoConstraints = false
+                
+                self.window?.addSubview(fourButtonsModal)
+                
+                if let parent = self.parent?.view {
+                    
+                    NSLayoutConstraint.activate([
+                        fourButtonsModal.topAnchor.constraint(equalTo: parent.topAnchor),
+                        fourButtonsModal.bottomAnchor.constraint(equalTo: parent.bottomAnchor),
+                        fourButtonsModal.leadingAnchor.constraint(equalTo: parent.leadingAnchor),
+                        fourButtonsModal.trailingAnchor.constraint(equalTo: parent.trailingAnchor)
+                    ])
+                }
+                
+                fourButtonsModal.setUp(
+                    title: NSLocalizedString("delete_photo_title", tableName: "Strings", bundle: Bundle(for: DHLUploadPhotoView.self), comment: ""),
+                    subtitle: NSLocalizedString("delete_photo_description", tableName: "Strings", bundle: Bundle(for: DHLUploadPhotoView.self), comment: ""),
+                    first: NSLocalizedString("delete", tableName: "Strings", bundle: Bundle(for: DHLUploadPhotoView.self), comment: ""),
                     firstAction: {
-                        
                         documentViewerView.removeFromSuperview()
+                        fourButtonsModal.removeFromSuperview()
                         deleteAction()
                     },
-                    second: R.string.strings.cancel(),
+                    second: NSLocalizedString("cancel", tableName: "Strings", bundle: Bundle(for: DHLUploadPhotoView.self), comment: ""),
                     secondAction: {
-                    }
+                        fourButtonsModal.removeFromSuperview()
+                    },
+                    secondButtonReserveColor: true
                 )
-                */
-                documentViewerView.removeFromSuperview()
-                deleteAction()
             },
             cancelAction: {
                 documentViewerView.removeFromSuperview()
@@ -291,32 +304,44 @@ public class DHLUploadPhotoOrPdfView: UIView {
             return
         }
         
-        guard let parent = parent else { return }
-        /*
-        parent.showThreeButtons(
-            R.string.strings.attach_photo(),
-            description: R.string.strings.attach_photo_camera_or_gallery(),
-            image: R.image.dialog_default(),
-            first: R.string.strings.camera(),
+        let fourButtonsModal = DHLFourButtonsModal(frame: .zero)
+        fourButtonsModal.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.window?.addSubview(fourButtonsModal)
+        
+        if let parent = self.parent?.view {
+            
+            NSLayoutConstraint.activate([
+                fourButtonsModal.topAnchor.constraint(equalTo: parent.topAnchor),
+                fourButtonsModal.bottomAnchor.constraint(equalTo: parent.bottomAnchor),
+                fourButtonsModal.leadingAnchor.constraint(equalTo: parent.leadingAnchor),
+                fourButtonsModal.trailingAnchor.constraint(equalTo: parent.trailingAnchor)
+            ])
+        }
+        
+        fourButtonsModal.setUp(
+            title: NSLocalizedString("attach_photo", tableName: "Strings", bundle: Bundle(for: DHLUploadPhotoView.self), comment: ""),
+            subtitle: NSLocalizedString("attach_photo_camera_or_gallery", tableName: "Strings", bundle: Bundle(for: DHLUploadPhotoView.self), comment: ""),
+            first: NSLocalizedString("camera", tableName: "Strings", bundle: Bundle(for: DHLUploadPhotoView.self), comment: ""),
             firstAction: {
-
-    #if targetEnvironment(simulator)
+                #if targetEnvironment(simulator)
                 self.imagePicker(source: .photoLibrary)
-    #else
+                #else
                 self.imagePicker(source: .camera)
-    #endif
+                #endif
+                fourButtonsModal.removeFromSuperview()
             },
-            second: R.string.strings.gallery(),
+            second: NSLocalizedString("gallery", tableName: "Strings", bundle: Bundle(for: DHLUploadPhotoView.self), comment: ""),
             secondAction: {
-
                 self.imagePicker(source: .photoLibrary)
+                fourButtonsModal.removeFromSuperview()
             },
-            third: R.string.strings.cancel(),
+            third: NSLocalizedString("cancel", tableName: "Strings", bundle: Bundle(for: DHLUploadPhotoView.self), comment: ""),
             thirdAction: {
-            }
+                fourButtonsModal.removeFromSuperview()
+            },
+            thirdButtonReserveColor: true
         )
-         */
-        self.imagePicker(source: .photoLibrary)
     }
     
     @IBAction func attachPdfButtonPressed(_ sender: Any) {

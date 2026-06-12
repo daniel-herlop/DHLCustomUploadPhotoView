@@ -181,6 +181,7 @@ public class DHLDocumentViewerView: UIView, UIScrollViewDelegate {
     @IBAction func downloadButtonPressed(_ sender: Any) {
         if let urlString = url, let url = URL(string: urlString) {
             
+            // TODO
             // self.parent?.showLoading(show: true)
             
             FileManagerHelper.downloadFile(fileName: downloadFileName ?? UUID().uuidString, url) { [weak self] (result) in
@@ -193,14 +194,30 @@ public class DHLDocumentViewerView: UIView, UIScrollViewDelegate {
                     showDocumentController(path: path)
 
                 case .failure(let error):
-                    print("TODO error")
-                    /*
-                    self.parent?.showOK(
-                        R.string.strings.ups(),
-                        description: error.localizedDescription,
-                        image: R.image.ic_warning()!.tinted(withColor: R.color.blue_app()!)
+                    
+                    let fourButtonsModal = DHLFourButtonsModal(frame: .zero)
+                    fourButtonsModal.translatesAutoresizingMaskIntoConstraints = false
+                    
+                    self.window?.addSubview(fourButtonsModal)
+                    
+                    if let parent = self.parent?.view {
+                        
+                        NSLayoutConstraint.activate([
+                            fourButtonsModal.topAnchor.constraint(equalTo: parent.topAnchor),
+                            fourButtonsModal.bottomAnchor.constraint(equalTo: parent.bottomAnchor),
+                            fourButtonsModal.leadingAnchor.constraint(equalTo: parent.leadingAnchor),
+                            fourButtonsModal.trailingAnchor.constraint(equalTo: parent.trailingAnchor)
+                        ])
+                    }
+                    
+                    fourButtonsModal.setUp(
+                        title: NSLocalizedString("error", tableName: "Strings", bundle: Bundle(for: DHLUploadPhotoView.self), comment: ""),
+                        subtitle: error.localizedDescription,
+                        first: NSLocalizedString("delete", tableName: "Strings", bundle: Bundle(for: DHLUploadPhotoView.self), comment: ""),
+                        firstAction: {
+                            fourButtonsModal.removeFromSuperview()
+                        }
                     )
-                    */
                 }
             }
             

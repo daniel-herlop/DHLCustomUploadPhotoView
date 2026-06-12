@@ -94,7 +94,7 @@ public class DHLUploadPhotoView: UIView {
     }
     
     func openDocumentViewer(deleteAction: @escaping (() -> Void)) {
-        guard let parent = parent else { return }
+        
         guard pickedImagePath != nil || attachedPhotoImageView.image != nil else { return }
         
         let documentViewerView = DHLDocumentViewerView(frame: .zero)

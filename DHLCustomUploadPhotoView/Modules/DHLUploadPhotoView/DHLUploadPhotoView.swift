@@ -100,9 +100,9 @@ public class DHLUploadPhotoView: UIView {
         let documentViewerView = DHLDocumentViewerView(frame: .zero)
         documentViewerView.translatesAutoresizingMaskIntoConstraints = false
         
-        self.window?.addSubview(documentViewerView)
-        
         if let parent = self.parent?.view {
+            
+            parent.addSubview(documentViewerView)
             
             NSLayoutConstraint.activate([
                 documentViewerView.topAnchor.constraint(equalTo: parent.topAnchor),
@@ -125,9 +125,9 @@ public class DHLUploadPhotoView: UIView {
                 let fourButtonsModal = DHLFourButtonsModal(frame: .zero)
                 fourButtonsModal.translatesAutoresizingMaskIntoConstraints = false
                 
-                self.window?.addSubview(fourButtonsModal)
-                
                 if let parent = self.parent?.view {
+                    
+                    parent.addSubview(fourButtonsModal)
                     
                     NSLayoutConstraint.activate([
                         fourButtonsModal.topAnchor.constraint(equalTo: parent.topAnchor),
@@ -176,9 +176,9 @@ public class DHLUploadPhotoView: UIView {
         let fourButtonsModal = DHLFourButtonsModal(frame: .zero)
         fourButtonsModal.translatesAutoresizingMaskIntoConstraints = false
         
-        self.window?.addSubview(fourButtonsModal)
-        
         if let parent = self.parent?.view {
+            
+            parent.addSubview(fourButtonsModal)
             
             NSLayoutConstraint.activate([
                 fourButtonsModal.topAnchor.constraint(equalTo: parent.topAnchor),

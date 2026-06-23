@@ -5,18 +5,18 @@
   Created by Daniel Hernandez on 11/06/2026.
   
 */
-"go_back"="Volver a la interfaz anterior";
-"delete"="Eliminar";
-"download"="Descargar";
-"attach_photo"="Adjuntar foto";
-"see_photo"="Ver foto";
-"attach_photo_camera_or_gallery"="Deseas hacer una foto o añadir una foto de la galería";
-"attach_pdf"="Adjuntar PDF";
-"attach_photo"="Adjuntar foto";
-"add_new_document"="Añadir nuevo documento";
-"mandatory"=". Obligatorio. ";
-"delete_photo_title"="Eliminar foto";
-"delete_photo_description"="¿Desea eliminar esta fotografía?";
-"cancel"="Cancelar";
-"camera"="Cámara";
-"gallery"="Galería";
+"go_back"="Return to previous interface";
+"delete"="Delete";
+"download"="Download";
+"attach_photo"="Attach photo";
+"see_photo"="See photo";
+"attach_photo_camera_or_gallery"="Do you want to take a photo or add one from the gallery?";
+"attach_pdf"="Attach PDF";
+"attach_photo"="Attach foto";
+"add_new_document"="Add new document";
+"mandatory"=". Mandatory. ";
+"delete_photo_title"="Delete foto";
+"delete_photo_description"="Do you want to delete this photo?";
+"cancel"="Cancel";
+"camera"="Camera";
+"gallery"="Gallery";

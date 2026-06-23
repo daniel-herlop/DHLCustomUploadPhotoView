@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		516FF53F5058C31AC095C444 /* libPods-DHLCustomUploadPhotoView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9507A21A134217EA6E308FC /* libPods-DHLCustomUploadPhotoView.a */; };
+		1270F0B895716C75DA562F34 /* libPods-DHLCustomUploadPhotoView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D477196793EE1670D72BF4 /* libPods-DHLCustomUploadPhotoView.a */; };
 		D75A97972FDB1AAE00EE6E13 /* DHLCustomDashedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75A97952FDB1AAE00EE6E13 /* DHLCustomDashedView.swift */; };
 		D75A979B2FDB1ABB00EE6E13 /* DHLDocumentViewerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D75A97992FDB1ABB00EE6E13 /* DHLDocumentViewerView.xib */; };
 		D75A979C2FDB1ABB00EE6E13 /* DHLDocumentViewerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75A97982FDB1ABB00EE6E13 /* DHLDocumentViewerView.swift */; };
@@ -19,14 +19,11 @@
 		D75A97AC2FDB1ADF00EE6E13 /* FileManagerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75A97AB2FDB1ADF00EE6E13 /* FileManagerHelper.swift */; };
 		D75A97B12FDB206300EE6E13 /* Strings.strings in Resources */ = {isa = PBXBuildFile; fileRef = D75A97AF2FDB206300EE6E13 /* Strings.strings */; };
 		D75A97B22FDB206300EE6E13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D75A97AD2FDB206300EE6E13 /* Assets.xcassets */; };
-		D7889A5C2FDC0BDF00E6E7B5 /* DHLFourButtonsModal.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7889A5A2FDC0BDF00E6E7B5 /* DHLFourButtonsModal.xib */; };
-		D7889A5D2FDC0BDF00E6E7B5 /* DHLFourButtonsModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7889A592FDC0BDF00E6E7B5 /* DHLFourButtonsModal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1063B7D7A7ADB596A91F88A4 /* Pods-DHLCustomUploadPhotoView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHLCustomUploadPhotoView.release.xcconfig"; path = "Target Support Files/Pods-DHLCustomUploadPhotoView/Pods-DHLCustomUploadPhotoView.release.xcconfig"; sourceTree = "<group>"; };
-		B9507A21A134217EA6E308FC /* libPods-DHLCustomUploadPhotoView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DHLCustomUploadPhotoView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D38546FFD807F60AC9D2A879 /* Pods-DHLCustomUploadPhotoView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHLCustomUploadPhotoView.debug.xcconfig"; path = "Target Support Files/Pods-DHLCustomUploadPhotoView/Pods-DHLCustomUploadPhotoView.debug.xcconfig"; sourceTree = "<group>"; };
+		00449AC81A0E9A89627CC379 /* Pods-DHLCustomUploadPhotoView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHLCustomUploadPhotoView.debug.xcconfig"; path = "Target Support Files/Pods-DHLCustomUploadPhotoView/Pods-DHLCustomUploadPhotoView.debug.xcconfig"; sourceTree = "<group>"; };
+		7A067F3F9FADE4C3E8572459 /* Pods-DHLCustomUploadPhotoView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHLCustomUploadPhotoView.release.xcconfig"; path = "Target Support Files/Pods-DHLCustomUploadPhotoView/Pods-DHLCustomUploadPhotoView.release.xcconfig"; sourceTree = "<group>"; };
 		D75A976E2FDB19E400EE6E13 /* DHLCustomUploadPhotoView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DHLCustomUploadPhotoView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D75A97952FDB1AAE00EE6E13 /* DHLCustomDashedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHLCustomDashedView.swift; sourceTree = "<group>"; };
 		D75A97982FDB1ABB00EE6E13 /* DHLDocumentViewerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHLDocumentViewerView.swift; sourceTree = "<group>"; };
@@ -39,9 +36,8 @@
 		D75A97AB2FDB1ADF00EE6E13 /* FileManagerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerHelper.swift; sourceTree = "<group>"; };
 		D75A97AD2FDB206300EE6E13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D75A97AE2FDB206300EE6E13 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Strings.strings; sourceTree = "<group>"; };
-		D7889A592FDC0BDF00E6E7B5 /* DHLFourButtonsModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHLFourButtonsModal.swift; sourceTree = "<group>"; };
-		D7889A5A2FDC0BDF00E6E7B5 /* DHLFourButtonsModal.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DHLFourButtonsModal.xib; sourceTree = "<group>"; };
 		D7889A5E2FDC142700E6E7B5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Strings.strings; sourceTree = "<group>"; };
+		E0D477196793EE1670D72BF4 /* libPods-DHLCustomUploadPhotoView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DHLCustomUploadPhotoView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				516FF53F5058C31AC095C444 /* libPods-DHLCustomUploadPhotoView.a in Frameworks */,
+				1270F0B895716C75DA562F34 /* libPods-DHLCustomUploadPhotoView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,16 +55,16 @@
 		399FEA88376EDD9B07C82051 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D38546FFD807F60AC9D2A879 /* Pods-DHLCustomUploadPhotoView.debug.xcconfig */,
-				1063B7D7A7ADB596A91F88A4 /* Pods-DHLCustomUploadPhotoView.release.xcconfig */,
+				00449AC81A0E9A89627CC379 /* Pods-DHLCustomUploadPhotoView.debug.xcconfig */,
+				7A067F3F9FADE4C3E8572459 /* Pods-DHLCustomUploadPhotoView.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		5E74E6AE8B820CF170DED251 /* Frameworks */ = {
+		A4480AE1D2442942FA0D236A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B9507A21A134217EA6E308FC /* libPods-DHLCustomUploadPhotoView.a */,
+				E0D477196793EE1670D72BF4 /* libPods-DHLCustomUploadPhotoView.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -79,7 +75,7 @@
 				D75A97792FDB19E900EE6E13 /* DHLCustomUploadPhotoView */,
 				D75A976F2FDB19E400EE6E13 /* Products */,
 				399FEA88376EDD9B07C82051 /* Pods */,
-				5E74E6AE8B820CF170DED251 /* Frameworks */,
+				A4480AE1D2442942FA0D236A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				D75A97962FDB1AAE00EE6E13 /* DHLCustomDashedView */,
-				D7889A5B2FDC0BDF00E6E7B5 /* DHLFourButtonsModal */,
 				D75A979A2FDB1ABB00EE6E13 /* DHLDocumentViewerView */,
 				D75A97A22FDB1AC000EE6E13 /* DHLUploadPhotoView */,
 				D75A979F2FDB1AC000EE6E13 /* DHLUploadPhotoOrPdfView */,
@@ -174,15 +169,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		D7889A5B2FDC0BDF00E6E7B5 /* DHLFourButtonsModal */ = {
-			isa = PBXGroup;
-			children = (
-				D7889A592FDC0BDF00E6E7B5 /* DHLFourButtonsModal.swift */,
-				D7889A5A2FDC0BDF00E6E7B5 /* DHLFourButtonsModal.xib */,
-			);
-			path = DHLFourButtonsModal;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -200,12 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D75A97752FDB19E400EE6E13 /* Build configuration list for PBXNativeTarget "DHLCustomUploadPhotoView" */;
 			buildPhases = (
-				68BE9E540CD6AF7271B1D03C /* [CP] Check Pods Manifest.lock */,
+				70996D64D21F0959D78B231A /* [CP] Check Pods Manifest.lock */,
 				D75A97692FDB19E400EE6E13 /* Headers */,
 				D75A976A2FDB19E400EE6E13 /* Sources */,
 				D75A976B2FDB19E400EE6E13 /* Frameworks */,
 				D75A976C2FDB19E400EE6E13 /* Resources */,
-				0AB2A4B03277DA8DB810D726 /* [CP] Copy Pods Resources */,
+				82D7180AF380D7701CA8CCC0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,35 +247,13 @@
 				D75A979B2FDB1ABB00EE6E13 /* DHLDocumentViewerView.xib in Resources */,
 				D75A97B12FDB206300EE6E13 /* Strings.strings in Resources */,
 				D75A97B22FDB206300EE6E13 /* Assets.xcassets in Resources */,
-				D7889A5C2FDC0BDF00E6E7B5 /* DHLFourButtonsModal.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0AB2A4B03277DA8DB810D726 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DHLCustomUploadPhotoView/Pods-DHLCustomUploadPhotoView-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DHLCustomUploadPhotoView/Pods-DHLCustomUploadPhotoView-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DHLCustomUploadPhotoView/Pods-DHLCustomUploadPhotoView-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		68BE9E540CD6AF7271B1D03C /* [CP] Check Pods Manifest.lock */ = {
+		70996D64D21F0959D78B231A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -311,6 +275,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		82D7180AF380D7701CA8CCC0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DHLCustomUploadPhotoView/Pods-DHLCustomUploadPhotoView-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DHLCustomUploadPhotoView/Pods-DHLCustomUploadPhotoView-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DHLCustomUploadPhotoView/Pods-DHLCustomUploadPhotoView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -319,7 +300,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D75A97A92FDB1AD100EE6E13 /* Extensions.swift in Sources */,
-				D7889A5D2FDC0BDF00E6E7B5 /* DHLFourButtonsModal.swift in Sources */,
 				D75A979C2FDB1ABB00EE6E13 /* DHLDocumentViewerView.swift in Sources */,
 				D75A97972FDB1AAE00EE6E13 /* DHLCustomDashedView.swift in Sources */,
 				D75A97A52FDB1AC000EE6E13 /* DHLUploadPhotoOrPdfView.swift in Sources */,
@@ -472,7 +452,7 @@
 		};
 		D75A97762FDB19E400EE6E13 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D38546FFD807F60AC9D2A879 /* Pods-DHLCustomUploadPhotoView.debug.xcconfig */;
+			baseConfigurationReference = 00449AC81A0E9A89627CC379 /* Pods-DHLCustomUploadPhotoView.debug.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -510,7 +490,7 @@
 		};
 		D75A97772FDB19E400EE6E13 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1063B7D7A7ADB596A91F88A4 /* Pods-DHLCustomUploadPhotoView.release.xcconfig */;
+			baseConfigurationReference = 7A067F3F9FADE4C3E8572459 /* Pods-DHLCustomUploadPhotoView.release.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;

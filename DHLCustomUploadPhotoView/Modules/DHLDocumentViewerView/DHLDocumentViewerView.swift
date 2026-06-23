@@ -7,6 +7,7 @@
 
 import UIKit
 import WebKit
+import DHLFourButtonsModal
 
 public class DHLDocumentViewerView: UIView, UIScrollViewDelegate {
     

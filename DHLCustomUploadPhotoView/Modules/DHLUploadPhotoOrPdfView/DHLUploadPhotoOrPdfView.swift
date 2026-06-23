@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import UniformTypeIdentifiers
 import MobileCoreServices
+import DHLFourButtonsModal
 
 public class DHLUploadPhotoOrPdfView: UIView {
     

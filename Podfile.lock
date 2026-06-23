@@ -1,16 +1,20 @@
 PODS:
   - Alamofire (5.11.2)
+  - DHLFourButtonsModal (1.0.2)
 
 DEPENDENCIES:
   - Alamofire
+  - DHLFourButtonsModal
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - DHLFourButtonsModal
 
 SPEC CHECKSUMS:
   Alamofire: 400275dd1c6d87d95a041861d2a59da4b520a203
+  DHLFourButtonsModal: c691ae8d2a1a874517bee008f09d245491229715
 
-PODFILE CHECKSUM: fed1487db8968e2b0f07c3a4e4c223d4fcd2af9e
+PODFILE CHECKSUM: 71d11aae907a85f0c8cd2b3d479fb1a85469ddee
 
 COCOAPODS: 1.16.2

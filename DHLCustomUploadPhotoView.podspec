@@ -6,7 +6,7 @@ s.name = "DHLCustomUploadPhotoView"
 s.summary = "Vistas custom para adjuntar y visualizar fotos y documentos"
 s.requires_arc = true
 
-s.version = "1.0.4"
+s.version = "1.0.5"
 
 s.license = { :type => "MIT", :file => "LICENSE" }
 

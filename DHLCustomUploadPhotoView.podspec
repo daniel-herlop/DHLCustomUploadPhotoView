@@ -6,7 +6,7 @@ s.name = "DHLCustomUploadPhotoView"
 s.summary = "Vistas custom para adjuntar y visualizar fotos y documentos"
 s.requires_arc = true
 
-s.version = "1.0.3"
+s.version = "1.0.4"
 
 s.license = { :type => "MIT", :file => "LICENSE" }
 
@@ -19,6 +19,7 @@ s.source = { :git => "https://github.com/daniel-herlop/DHLCustomUploadPhotoView.
 
 s.framework = "UIKit"
 s.dependency 'Alamofire'
+s.dependency 'DHLFourButtonsModal'
 
 s.source_files = "DHLCustomUploadPhotoView/**/*.{swift}"
 

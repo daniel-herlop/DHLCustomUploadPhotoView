@@ -6,6 +6,7 @@ target 'DHLCustomUploadPhotoView' do
   # Pods for DHLCustomLib
   pod 'Alamofire'
   pod 'DHLFourButtonsModal'
+  pod 'DHLLoadingAnimation'
   
 end
 

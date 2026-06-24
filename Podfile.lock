@@ -1,20 +1,28 @@
 PODS:
   - Alamofire (5.11.2)
   - DHLFourButtonsModal (1.0.2)
+  - DHLLoadingAnimation (1.0.0):
+    - lottie-ios
+  - lottie-ios (4.6.1)
 
 DEPENDENCIES:
   - Alamofire
   - DHLFourButtonsModal
+  - DHLLoadingAnimation
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - DHLFourButtonsModal
+    - DHLLoadingAnimation
+    - lottie-ios
 
 SPEC CHECKSUMS:
   Alamofire: 400275dd1c6d87d95a041861d2a59da4b520a203
   DHLFourButtonsModal: c691ae8d2a1a874517bee008f09d245491229715
+  DHLLoadingAnimation: bdc1c234e7defd0f44c752f9e85a30fbf4f29268
+  lottie-ios: 6467ca7035120c5b0e0acee58bb679cf15875686
 
-PODFILE CHECKSUM: 71d11aae907a85f0c8cd2b3d479fb1a85469ddee
+PODFILE CHECKSUM: b6e4a1c42950c65038543e148d3e510e63ae5636
 
 COCOAPODS: 1.16.2

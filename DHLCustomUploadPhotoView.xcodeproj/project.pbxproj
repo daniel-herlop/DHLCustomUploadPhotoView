@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1270F0B895716C75DA562F34 /* libPods-DHLCustomUploadPhotoView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D477196793EE1670D72BF4 /* libPods-DHLCustomUploadPhotoView.a */; };
+		D4FF91EEC965B612689ED3D5 /* libPods-DHLCustomUploadPhotoView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD144BD1CDFD43BDB902E53 /* libPods-DHLCustomUploadPhotoView.a */; };
 		D75A97972FDB1AAE00EE6E13 /* DHLCustomDashedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75A97952FDB1AAE00EE6E13 /* DHLCustomDashedView.swift */; };
 		D75A979B2FDB1ABB00EE6E13 /* DHLDocumentViewerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D75A97992FDB1ABB00EE6E13 /* DHLDocumentViewerView.xib */; };
 		D75A979C2FDB1ABB00EE6E13 /* DHLDocumentViewerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75A97982FDB1ABB00EE6E13 /* DHLDocumentViewerView.swift */; };
@@ -22,8 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		00449AC81A0E9A89627CC379 /* Pods-DHLCustomUploadPhotoView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHLCustomUploadPhotoView.debug.xcconfig"; path = "Target Support Files/Pods-DHLCustomUploadPhotoView/Pods-DHLCustomUploadPhotoView.debug.xcconfig"; sourceTree = "<group>"; };
-		7A067F3F9FADE4C3E8572459 /* Pods-DHLCustomUploadPhotoView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHLCustomUploadPhotoView.release.xcconfig"; path = "Target Support Files/Pods-DHLCustomUploadPhotoView/Pods-DHLCustomUploadPhotoView.release.xcconfig"; sourceTree = "<group>"; };
+		925AB6CB56E7451272E105A6 /* Pods-DHLCustomUploadPhotoView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHLCustomUploadPhotoView.debug.xcconfig"; path = "Target Support Files/Pods-DHLCustomUploadPhotoView/Pods-DHLCustomUploadPhotoView.debug.xcconfig"; sourceTree = "<group>"; };
+		ABD144BD1CDFD43BDB902E53 /* libPods-DHLCustomUploadPhotoView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DHLCustomUploadPhotoView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B885D73CE79F5CEBAC223B70 /* Pods-DHLCustomUploadPhotoView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHLCustomUploadPhotoView.release.xcconfig"; path = "Target Support Files/Pods-DHLCustomUploadPhotoView/Pods-DHLCustomUploadPhotoView.release.xcconfig"; sourceTree = "<group>"; };
 		D75A976E2FDB19E400EE6E13 /* DHLCustomUploadPhotoView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DHLCustomUploadPhotoView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D75A97952FDB1AAE00EE6E13 /* DHLCustomDashedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHLCustomDashedView.swift; sourceTree = "<group>"; };
 		D75A97982FDB1ABB00EE6E13 /* DHLDocumentViewerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHLDocumentViewerView.swift; sourceTree = "<group>"; };
@@ -37,7 +38,6 @@
 		D75A97AD2FDB206300EE6E13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D75A97AE2FDB206300EE6E13 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Strings.strings; sourceTree = "<group>"; };
 		D7889A5E2FDC142700E6E7B5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Strings.strings; sourceTree = "<group>"; };
-		E0D477196793EE1670D72BF4 /* libPods-DHLCustomUploadPhotoView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DHLCustomUploadPhotoView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,28 +45,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1270F0B895716C75DA562F34 /* libPods-DHLCustomUploadPhotoView.a in Frameworks */,
+				D4FF91EEC965B612689ED3D5 /* libPods-DHLCustomUploadPhotoView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0774A57355E1D1149B36E458 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABD144BD1CDFD43BDB902E53 /* libPods-DHLCustomUploadPhotoView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		399FEA88376EDD9B07C82051 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				00449AC81A0E9A89627CC379 /* Pods-DHLCustomUploadPhotoView.debug.xcconfig */,
-				7A067F3F9FADE4C3E8572459 /* Pods-DHLCustomUploadPhotoView.release.xcconfig */,
+				925AB6CB56E7451272E105A6 /* Pods-DHLCustomUploadPhotoView.debug.xcconfig */,
+				B885D73CE79F5CEBAC223B70 /* Pods-DHLCustomUploadPhotoView.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		A4480AE1D2442942FA0D236A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E0D477196793EE1670D72BF4 /* libPods-DHLCustomUploadPhotoView.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D75A97642FDB19E400EE6E13 = {
@@ -75,7 +75,7 @@
 				D75A97792FDB19E900EE6E13 /* DHLCustomUploadPhotoView */,
 				D75A976F2FDB19E400EE6E13 /* Products */,
 				399FEA88376EDD9B07C82051 /* Pods */,
-				A4480AE1D2442942FA0D236A /* Frameworks */,
+				0774A57355E1D1149B36E458 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -186,12 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D75A97752FDB19E400EE6E13 /* Build configuration list for PBXNativeTarget "DHLCustomUploadPhotoView" */;
 			buildPhases = (
-				70996D64D21F0959D78B231A /* [CP] Check Pods Manifest.lock */,
+				F66FAED88871E11F7E6BADB0 /* [CP] Check Pods Manifest.lock */,
 				D75A97692FDB19E400EE6E13 /* Headers */,
 				D75A976A2FDB19E400EE6E13 /* Sources */,
 				D75A976B2FDB19E400EE6E13 /* Frameworks */,
 				D75A976C2FDB19E400EE6E13 /* Resources */,
-				82D7180AF380D7701CA8CCC0 /* [CP] Copy Pods Resources */,
+				471701AE9BA563695B336389 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,7 +253,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		70996D64D21F0959D78B231A /* [CP] Check Pods Manifest.lock */ = {
+		471701AE9BA563695B336389 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DHLCustomUploadPhotoView/Pods-DHLCustomUploadPhotoView-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DHLCustomUploadPhotoView/Pods-DHLCustomUploadPhotoView-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DHLCustomUploadPhotoView/Pods-DHLCustomUploadPhotoView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F66FAED88871E11F7E6BADB0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -273,23 +290,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		82D7180AF380D7701CA8CCC0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DHLCustomUploadPhotoView/Pods-DHLCustomUploadPhotoView-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DHLCustomUploadPhotoView/Pods-DHLCustomUploadPhotoView-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DHLCustomUploadPhotoView/Pods-DHLCustomUploadPhotoView-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -452,7 +452,7 @@
 		};
 		D75A97762FDB19E400EE6E13 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00449AC81A0E9A89627CC379 /* Pods-DHLCustomUploadPhotoView.debug.xcconfig */;
+			baseConfigurationReference = 925AB6CB56E7451272E105A6 /* Pods-DHLCustomUploadPhotoView.debug.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -490,7 +490,7 @@
 		};
 		D75A97772FDB19E400EE6E13 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A067F3F9FADE4C3E8572459 /* Pods-DHLCustomUploadPhotoView.release.xcconfig */;
+			baseConfigurationReference = B885D73CE79F5CEBAC223B70 /* Pods-DHLCustomUploadPhotoView.release.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;

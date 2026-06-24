@@ -8,6 +8,7 @@
 import UIKit
 import WebKit
 import DHLFourButtonsModal
+import DHLLoadingAnimation
 
 public class DHLDocumentViewerView: UIView, UIScrollViewDelegate {
     
@@ -182,13 +183,12 @@ public class DHLDocumentViewerView: UIView, UIScrollViewDelegate {
     @IBAction func downloadButtonPressed(_ sender: Any) {
         if let urlString = url, let url = URL(string: urlString) {
             
-            // TODO
-            // self.parent?.showLoading(show: true)
+            self.parent?.showLoadingAnimation(show: true)
             
             FileManagerHelper.downloadFile(fileName: downloadFileName ?? UUID().uuidString, url) { [weak self] (result) in
                 guard let self = self else { return }
                 
-                // self.parent?.showLoading(show: false)
+                self.parent?.showLoadingAnimation(show: false)
 
                 switch result {
                 case .success(let path):

@@ -26,6 +26,9 @@ pod 'DHLCustomUploadPhotoView'
 
 ### UIKit
 
+
+You can add the DHLUploadPhotoView or the DHLUploadPhotoOrPdfView to a storyboard and make the setUp.
+
 ```swift
 let documentViewerView = DHLDocumentViewerView(frame: .zero)
 documentViewerView.translatesAutoresizingMaskIntoConstraints = false
@@ -42,7 +45,7 @@ NSLayoutConstraint.activate([
 
 documentViewerView.setUp(
     parent: self.parentViewController,
-    title: self.especie?.getNombre(),
+    title: "titulo",
     document: data,
     showDelete: false,
     showDownloadButton: false,
